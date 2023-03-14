@@ -151,6 +151,18 @@ p{
   color: var(--Orange--);
 }
 
+.btn-submit:disabled,
+button[disabled] {
+  background-color: var(--dark-orange--);
+  color: var(--white--);
+  cursor:not-allowed;
+}
+
+.btn-submit:active {
+  background-color: var(--white--);
+  color: var(--Orange--);
+}
+
 
 
 .panel-score{
@@ -176,6 +188,21 @@ p{
 }
 .df-none{
     display: none;
+}
+.upper{
+    text-transform: uppercase;
+}
+
+.animate{
+    transition: 0.4s;
+}
+
+.small-size{
+    transform: scale(0.4);
+}
+
+.default-size{
+    transform: scale(1);
 }
 
 @media (max-width: 425px){
