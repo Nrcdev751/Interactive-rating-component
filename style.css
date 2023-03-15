@@ -25,6 +25,17 @@ body{
 
 }
 
+.attribution {
+    margin-top: 1rem;
+    color: var(--white--);
+    font-size: small;
+}
+
+.attribution a{
+    color: var(--Orange--);
+    font-weight: bold;
+}
+
 p{
     font-size: 15px;
 }
@@ -193,20 +204,50 @@ button[disabled] {
     text-transform: uppercase;
 }
 
-.animate{
-    transition: 0.4s;
-}
 
-.small-size{
-    transform: scale(0.4);
-}
-
-.default-size{
-    transform: scale(1);
-}
 
 @media (max-width: 425px){
      br {
         display: none;
     }
 }
+
+/* ------- Animation */
+
+@keyframes popup {
+    0% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeup {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        transform: scale(0.8);
+        opacity: 50;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 100;
+    }
+}
+
+.popup-ani {
+    animation-name: popup;
+    animation-duration: 0.3s;
+}
+.fadeup-ani {
+    animation-name: fadeup;
+    animation-duration: 0.5s;
+    animation-delay: 0.1s;
+    animation-fill-mode: both;
+
+}
+
+
+
