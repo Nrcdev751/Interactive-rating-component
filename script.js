@@ -84,7 +84,8 @@ function scoreFocus5() {
 }
 
 function refreash(){
-    location.reload();
+    thankYOU.style.display="none"
+    rateForm.style.display="block"
 }
 
 
